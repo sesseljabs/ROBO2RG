@@ -50,7 +50,11 @@ void turn(int deg){
 
 task main()
 {
-
-
+	int listi[15] = {1, -1, -1, 1, 1, -1, 1,1, -1,1,1,-1,-1,1,0};
+	for(int i = 0; i < 15; i++){
+		drive(0.5);
+		wait1Msec(100);
+		turn(listi[i]*90);
+	}
 
 }
